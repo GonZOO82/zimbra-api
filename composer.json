@@ -1,5 +1,5 @@
 {
-    "name": "zimbra/soap-api",
+    "name": "GonZOO82/soap-api",
     "type": "library",
     "description": "PHP wrapper library around the Zimbra Soap API (web service)",
     "keywords": ["library", "soap", "web service", "client", "Zimbra API"],
@@ -21,18 +21,13 @@
         "phpunit/phpunit": "~4.0",
         "fzaninotto/faker": "~v1.5.0"
     },
-    "autoload": {
-        "psr-4": {
-            "Zimbra\\": "src/Zimbra"
-        },
-        "exclude-from-classmap": [
-            "**/Tests/"
-        ]
+    "suggest": {
+        "ext-soap": "*"
     },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+    "autoload": {
+        "psr-0": {
+            "Zimbra\\Tests": "tests/",
+            "Zimbra": "src/"
         }
     }
 }
