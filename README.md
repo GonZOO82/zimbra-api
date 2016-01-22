@@ -28,7 +28,7 @@ Now we can use autoloader from Composer by:
 ```yaml
 {
     "require": {
-        "nguyennv/zimbra-api": "*"
+        "gon-zoo82/zimbra-api": "*"
     }
 }
 ```
